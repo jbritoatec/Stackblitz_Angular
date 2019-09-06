@@ -1,8 +1,4 @@
 <h3>Lista de alunos:</h3>
 <ul>
-  <li>Ana</li>
-  <li>Ana</li>
-  <li>Ana</li>
-  <li>Ana</li>
-  <li>Ana</li>
+  <li *ngFor="let aluno of alunos">Nome: {{aluno.name}} | Idade: {{aluno.age}}</li>
 </ul>
