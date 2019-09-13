@@ -8,12 +8,12 @@ import { aluno } from '../alunos';
 })
 export class StudentDetailsComponent implements OnInit {
 
-  alunos:aluno;
+  aluno:aluno;
 
   constructor() { }
 
-  renderDetails(alunos:aluno) {
-    this.alunos = alunos;
+  showDetails(aluno:aluno) {
+    this.aluno = aluno;
   }
 
   ngOnInit() {

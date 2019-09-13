@@ -1,4 +1,7 @@
-<h3>Lista de alunos :</h3>
+<h3>Alunos :</h3>
 <ul>
-  <li *ngFor="let aluno of alunos">Nome: {{aluno.name}} | Idade: {{aluno.age}}</li>
+  <li *ngFor="let aluno of alunos">
+    {{aluno.name}}
+    <button (click) = "details.renderDetails(aluno)">X</button>
+  </li>
 </ul>

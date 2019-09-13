@@ -10,9 +10,6 @@
 <p>Descrição: <input type="text" placeholder="Descrição da turma" [(ngModel)]="turma.description" ></p>
 
 <p>Data de início: <input type="date" placeholder="Data de início"  [(ngModel)]="turma.start_date"></p>
-
-<app-alunos></app-alunos>
-
-<form method="" action="">
-<input type="button" value="Editar">
-</form>
+<hr>
+<app-alunos [details]="details"></app-alunos>
+<app-student-details #details></app-student-details>
