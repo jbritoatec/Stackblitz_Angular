@@ -1,18 +1,36 @@
 <h2>Dados da turma:</h2>
-<p>Nome: {{turma.name | uppercase}}</p> 
-<p>Descrição: {{turma.description}}</p> 
-<p>Data de início: {{turma.start_date | date}}</p> 
+<p>
+   Nome da turma:
+  <span *ngIf="!edit;">
+    {{turma.name | uppercase }}
+  </span>
+  <input type="text" [(ngModel)]="turma.name" placeholder="Nome Turma" *ngIf="edit;"/>
+</p> 
+<p>Descrição: 
+  <span *ngIf="!edit;">
+    {{turma.description}}
+  </span>
+  <input type="text" [(ngModel)]="turma.description" placeholder="Descrição" *ngIf="edit;"/>
+</p> 
+<p> 
+  Data de início:
+  <span *ngIf="!edit;">
+    {{turma.start_date | date}}
+  </span>
+  <input type="date" [(ngModel)]="turma.start_date" *ngIf="edit;"/>
+</p> 
 
-<form>
-<input type="button" value="Editar">
-</form>
+<button (click) = "enableEdit()">
+  {{edit ? "Guardar" : "Editar" }}
+</button>
 
 <hr>
+<!--
 <h3>Editar em tempo real os dados da turma</h3>
 <p>Nome: <input type="text" placeholder="Nome da turma" [(ngModel)]="turma.name" ></p>
 
 <p>Descrição: <input type="text" placeholder="Descrição da turma" [(ngModel)]="turma.description" ></p>
 
 <p>Data de início: <input type="date" placeholder="Data de início"  [(ngModel)]="turma.start_date"></p>
-<hr>
+<hr>-->
 

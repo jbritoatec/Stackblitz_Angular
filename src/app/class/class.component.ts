@@ -14,6 +14,11 @@ export class ClassComponent implements OnInit {
     start_date: new Date(2018,10,22),
   }
 
+  edit:boolean = false;
+
+  enableEdit() {
+    this.edit = !this.edit;
+  }
 
   constructor() { }
 

@@ -8,10 +8,11 @@ import { StudentDetailsComponent } from '../student-details/student-details.comp
   styleUrls: ['./alunos.component.css']
 })
 export class AlunosComponent implements OnInit {
-  
+
   alunos = alunos;
   //a variavel details recebe os detalhes do aluno.
-  @Input() details: StudentDetailsComponent; 
+  @Input() details: StudentDetailsComponent;
+
 
   constructor() { }
 
