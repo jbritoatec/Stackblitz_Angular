@@ -8,10 +8,12 @@ import { aluno } from '../alunos';
 })
 export class StudentDetailsComponent implements OnInit {
 
+  //import de um aluno com os atributos da classe aluno
   aluno:aluno;
 
   constructor() { }
 
+  //função para mostrar os detalhes do aluno que seja selecionado
   showDetails(aluno:aluno) {
     this.aluno = aluno;
   }

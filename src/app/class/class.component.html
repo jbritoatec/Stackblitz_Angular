@@ -1,15 +1,18 @@
-<h1>Aula - 06/09/2019</h1>
-<hr>
 <h2>Dados da turma:</h2>
 <p>Nome: {{turma.name | uppercase}}</p> 
 <p>Descrição: {{turma.description}}</p> 
 <p>Data de início: {{turma.start_date | date}}</p> 
+
+<form>
+<input type="button" value="Editar">
+</form>
+
 <hr>
+<h3>Editar em tempo real os dados da turma</h3>
 <p>Nome: <input type="text" placeholder="Nome da turma" [(ngModel)]="turma.name" ></p>
 
 <p>Descrição: <input type="text" placeholder="Descrição da turma" [(ngModel)]="turma.description" ></p>
 
 <p>Data de início: <input type="date" placeholder="Data de início"  [(ngModel)]="turma.start_date"></p>
 <hr>
-<app-student-details #details></app-student-details>
-<app-alunos [details]="details"></app-alunos>
+

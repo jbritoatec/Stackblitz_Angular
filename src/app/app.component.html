@@ -1,5 +1,8 @@
-<!--<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>-->
+<h1>Aula - 06/09/2019</h1>
+<hr>
 <app-class></app-class>
+<!--o 'id' "details" para receber os detalhes do aluno e mostrar no componente dos detalhes dos alunos -->
+<app-student-details #details></app-student-details>
+<!-- [details] recebe os detalhes do aluno que está declarado no componente dos alunos 
+e entrega ao 'id' "details"-->
+<app-alunos [details]="details"> </app-alunos>
