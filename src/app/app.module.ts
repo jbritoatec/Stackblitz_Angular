@@ -9,6 +9,7 @@ import { AlunosComponent } from './alunos/alunos.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { AlunosServiceService } from './alunos-service.service';
 
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, ClassComponent, AlunosComponent, StudentDetailsComponent ],
